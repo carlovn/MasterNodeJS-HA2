@@ -20,5 +20,9 @@ This application exposes the following routes on either HTTP or HTTPS:
 - Add, update or remove items in the cart (cart PUT, DELETE)
 - Check out and pay (checkout POST)
 
-### users
-#### POST 
+### users - POST
+Request: http(s)://<host>/users
+Headers: None
+Body: '''
+  {'emailAddress' : 'john.smith@email.com'}
+  '''
