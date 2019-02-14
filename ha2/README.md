@@ -11,3 +11,12 @@ This application exposes the following routes on either HTTP or HTTPS:
 - menu (GET)
 - cart (POST, GET, PUT, DELETE)
 - checkout (POST)
+
+### Typical Application Flow
+- Create a new user (users POST)
+- Create a new token for this user (token POST)
+- Get the list of available items on the menu (menu GET)
+- Create the cart (put the first item in the cart) (cart POST)
+- Add, update or remove items in the cart (cart PUT, DELETE)
+- Check out and pay (checkout POST)
+
