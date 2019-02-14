@@ -6,9 +6,9 @@
 
 ## Code Overview
 This application exposes the following routes on either HTTP or HTTPS:
-	users		CRUD
-	tokens		CRUD
-	menu		R
-	cart		CRUD
-	checkout	C
+- users		CRUD
+- tokens	CRUD
+- menu		R
+- cart		CRUD
+- checkout	C
   
