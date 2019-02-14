@@ -73,3 +73,26 @@ Body:
 ```
 
 Both phone and password are required for this method.
+
+
+
+### tokens - GET
+Request: http(s)://<host>/tokens?id=ksjnf405789ty894r7ug
+
+Headers: None
+
+Body: None
+
+
+
+### tokens - PUT
+Request: http(s)://<host>/tokens
+
+Headers: None
+
+Body:
+```
+  {'id' : 'sd976sdfj94578th9345', 'extend' : true/false}
+```
+
+This method can be used to extend a token which is still valid.
