@@ -2,7 +2,7 @@
 
 > This project contains the following hidden folders and files:
 - .data - Contains folders cart, menu, tokens & users. menu contains menu_items.json as an example.
-- https - Contains the .rnd file used for creating the certificate and key. You will need to create your own in order to use the https protocol.
+- https - Contains the .rnd file used for creating the certificate and key. You will need to create your own certificate and key in order to use the https protocol.
 
 ## Code Overview
 This application exposes the following routes on either HTTP or HTTPS:
@@ -20,3 +20,5 @@ This application exposes the following routes on either HTTP or HTTPS:
 - Add, update or remove items in the cart (cart PUT, DELETE)
 - Check out and pay (checkout POST)
 
+### users
+#### POST 
