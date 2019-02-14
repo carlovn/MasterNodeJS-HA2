@@ -167,4 +167,17 @@ Body:
 ```
   {'cartItems' : [ 'cartItem' : { 'menuId' : '1', 'itemCount' : 2 }, 'cartItem' : { 'menuId' : '2', 'itemCount' : 1 } ] }
 ```
-This method can only be used if the user already has an existing cart. Items in the body/payload of the request will be compared to (by menuID) items in the cart. Existing menu items will be deleted/removed from the cart. Non-existing menu items will be ignored.
+This method can only be used if the user already has an existing cart. Items in the body/payload of the request will be compared to (by menuID) items in the cart. Existing menu items will be deleted/removed from the cart. Non-existing menu items will be ignored. The user's cart will never be deleted.
+
+
+
+### checkout - POST
+Request: http(s)://<host>/checkout
+
+Headers: Token
+
+Body: 
+```
+  {'cartId' : 'skldjfhqir3ufh289457', 'card Number' : '398572756375094', 'expirationMonth' : 12, 'expirationYear' : 2019, 'CVC' : 9999 }
+```
+This method is used to issue a credit card payment, using the STRIPE service and to confirm the pizza order via email. Upon successful posting of the payment, the user's cart will be emptied.
