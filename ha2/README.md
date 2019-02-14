@@ -25,6 +25,7 @@ Request: http(s)://<host>/users
 
 Headers: None
 
-Body: ```
-  {'emailAddress' : 'john.smith@email.com'}
+Body: 
+```
+  {'emailAddress' : 'john.smith@email.com', 'firstName' : 'John', 'lastName' : 'Smith', 'phone' : '5555555555', 'addressLine1' : '1 First Street', 'addressLine2' : '#111', 'addressCity' : 'Capital City', 'addressState' : 'NY', 'addressZipCode' : 99999, 'password' : 'mypassword', 'tosAgreement' : true/false, 'cardNbr' : '294857275638746', 'cardExp' : '1219', 'cardCVV' : '9999'}
 ```
