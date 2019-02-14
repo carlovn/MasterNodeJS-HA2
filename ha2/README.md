@@ -22,7 +22,10 @@ This application exposes the following routes on either HTTP or HTTPS:
 
 ### users - POST
 Request: http(s)://<host>/users
+
 Headers: None
-Body: '''
+
+Body: 
+'''
   {'emailAddress' : 'john.smith@email.com'}
-  '''
+'''
