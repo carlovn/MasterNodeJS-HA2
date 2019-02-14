@@ -131,3 +131,40 @@ Body:
   {'cartItems' : [ 'cartItem' : { 'menuId' : '1', 'itemCount' : 2 }, 'cartItem' : { 'menuId' : '2', 'itemCount' : 1 } ] }
 ```
 This method can only be used if the user does not have a cart yet. It will create the cart, with a unique cartId and add the items to the cart.
+
+
+
+### cart - GET
+Request: http(s)://<host>/cart?phone=5555555555
+
+Headers: Token
+
+Body: None
+
+Phone Number is required. This will read the items from the user's cart and return with a calculated total.
+
+
+
+### cart - PUT
+Request: http(s)://<host>/cart
+
+Headers: Token
+
+Body: 
+```
+  {'cartItems' : [ 'cartItem' : { 'menuId' : '1', 'itemCount' : 2 }, 'cartItem' : { 'menuId' : '2', 'itemCount' : 1 } ] }
+```
+This method can only be used if the user already has an existing cart. (It can be empty.) Items in the body/payload of the request will be compared to (by menuID) items in the cart. Existing menu items will be updated (itemCount). Non-existing menu items will be added to the cart.
+
+
+
+### cart - DELETE
+Request: http(s)://<host>/cart
+
+Headers: Token
+
+Body: 
+```
+  {'cartItems' : [ 'cartItem' : { 'menuId' : '1', 'itemCount' : 2 }, 'cartItem' : { 'menuId' : '2', 'itemCount' : 1 } ] }
+```
+This method can only be used if the user already has an existing cart. Items in the body/payload of the request will be compared to (by menuID) items in the cart. Existing menu items will be deleted/removed from the cart. Non-existing menu items will be ignored.
