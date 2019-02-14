@@ -96,3 +96,38 @@ Body:
 ```
 
 This method can be used to extend a token which is still valid.
+
+
+
+### tokens - DELETE
+Request: http(s)://<host>/tokens?id=sd976sdfj94578th9345
+
+Headers: None
+
+Body: None
+
+The token 'id' is required to delete a token.
+
+
+
+### menu - GET
+Request: http(s)://<host>/menu?phone=5555555555
+
+Headers: Token
+
+Body: None
+
+A valid phone number and token is required for this method to the return the list of menu items.
+
+
+
+### cart - POST
+Request: http(s)://<host>/cart
+
+Headers: Token
+
+Body: 
+```
+  {'cartItems' : [ 'cartItem' : { 'menuId' : '1', 'itemCount' : 2 }, 'cartItem' : { 'menuId' : '2', 'itemCount' : 1 } ] }
+```
+This method can only be used if the user does not have a cart yet. It will create the cart, with a unique cartId and add the items to the cart.
