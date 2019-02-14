@@ -21,7 +21,7 @@ This application exposes the following routes on either HTTP or HTTPS:
 - Check out and pay (checkout POST)
 
 ### users - POST
-Request: http(s):\/\/<host>/users
+Request: http(s):/<host>/users
 
 Headers: None
 
