@@ -31,7 +31,7 @@ Body:
 ```
 
 ### users - GET
-Request: http(s)://<host>/users?phone=5555555555
+Request: `http(s)://<host>/users?phone=5555555555`
 
 Headers: Token
 
@@ -40,7 +40,7 @@ Body: None
 
 
 ### users - PUT
-Request: http(s)://<host>/users
+Request: `http(s)://<host>/users`
 
 Headers: Token
 
@@ -54,7 +54,7 @@ The only required element is 'phone'. Everything else is optional. Phone number 
 
 
 ### users - DELETE
-Request: http(s)://<host>/users?phone=5555555555
+Request: `http(s)://<host>/users?phone=5555555555`
 
 Headers: Token
 
@@ -63,7 +63,7 @@ Body: None
 
 
 ### tokens - POST
-Request: http(s)://<host>/tokens
+Request: `http(s)://<host>/tokens`
 
 Headers: None
 
@@ -77,7 +77,7 @@ Both phone and password are required for this method.
 
 
 ### tokens - GET
-Request: http(s)://<host>/tokens?id=ksjnf405789ty894r7ug
+Request: `http(s)://<host>/tokens?id=ksjnf405789ty894r7ug`
 
 Headers: None
 
@@ -86,7 +86,7 @@ Body: None
 
 
 ### tokens - PUT
-Request: http(s)://<host>/tokens
+Request: `http(s)://<host>/tokens`
 
 Headers: None
 
@@ -100,7 +100,7 @@ This method can be used to extend a token which is still valid.
 
 
 ### tokens - DELETE
-Request: http(s)://<host>/tokens?id=sd976sdfj94578th9345
+Request: `http(s)://<host>/tokens?id=sd976sdfj94578th9345`
 
 Headers: None
 
@@ -111,7 +111,7 @@ The token 'id' is required to delete a token.
 
 
 ### menu - GET
-Request: http(s)://<host>/menu?phone=5555555555
+Request: `http(s)://<host>/menu?phone=5555555555`
 
 Headers: Token
 
@@ -122,7 +122,7 @@ A valid phone number and token is required for this method to the return the lis
 
 
 ### cart - POST
-Request: http(s)://<host>/cart
+Request: `http(s)://<host>/cart`
 
 Headers: Token
 
@@ -135,7 +135,7 @@ This method can only be used if the user does not have a cart yet. It will creat
 
 
 ### cart - GET
-Request: http(s)://<host>/cart?phone=5555555555
+Request: `http(s)://<host>/cart?phone=5555555555`
 
 Headers: Token
 
@@ -146,7 +146,7 @@ Phone Number is required. This will read the items from the user's cart and retu
 
 
 ### cart - PUT
-Request: http(s)://<host>/cart
+Request: `http(s)://<host>/cart`
 
 Headers: Token
 
@@ -159,7 +159,7 @@ This method can only be used if the user already has an existing cart. (It can b
 
 
 ### cart - DELETE
-Request: http(s)://<host>/cart
+Request: `http(s)://<host>/cart`
 
 Headers: Token
 
@@ -172,7 +172,7 @@ This method can only be used if the user already has an existing cart. Items in 
 
 
 ### checkout - POST
-Request: http(s)://<host>/checkout
+Request: `http(s)://<host>/checkout`
 
 Headers: Token
 
