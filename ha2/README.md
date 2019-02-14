@@ -59,3 +59,17 @@ Request: http(s)://<host>/users?phone=5555555555
 Headers: Token
 
 Body: None
+
+
+
+### tokens - POST
+Request: http(s)://<host>/tokens
+
+Headers: None
+
+Body: 
+```
+  {'phone' : '5555555555', 'password' : 'mypassword'}
+```
+
+Both phone and password are required for this method.
