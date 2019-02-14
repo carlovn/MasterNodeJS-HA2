@@ -25,7 +25,6 @@ Request: http(s)://<host>/users
 
 Headers: None
 
-Body: 
-```
+Body: ```
   {'emailAddress' : 'john.smith@email.com'}
 ```
