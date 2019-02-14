@@ -6,9 +6,9 @@
 
 ## Code Overview
 This application exposes the following routes on either HTTP or HTTPS:
-- users &nbsp;&nbsp; POST, GET, PUT, DELETE
-- tokens POST, GET, PUT, DELETE
-- menu GET
-- cart POST, GET, PUT, DELETE
-- checkout POST
+- users &nbsp;&nbsp;&nbsp; POST, GET, PUT, DELETE
+- tokens &nbsp;&nbsp;&nbsp; POST, GET, PUT, DELETE
+- menu &nbsp;&nbsp;&nbsp; GET
+- cart &nbsp;&nbsp;&nbsp; POST, GET, PUT, DELETE
+- checkout &nbsp;&nbsp;&nbsp; POST
 
