@@ -38,6 +38,7 @@ Headers: Token
 Body: None
 
 
+
 ### users - PUT
 Request: http(s)://<host>/users
 
@@ -48,4 +49,13 @@ Body:
   {'emailAddress' : 'john.smith@email.com', 'firstName' : 'John', 'lastName' : 'Smith', 'phone' : '5555555555', 'addressLine1' : '1 First Street', 'addressLine2' : '#111', 'addressCity' : 'Capital City', 'addressState' : 'NY', 'addressZipCode' : 99999, 'password' : 'mypassword', 'cardNbr' : '294857275638746', 'cardExp' : '1219', 'cardCVV' : '9999', 'cartItemCnt' : 1}
 ```
 
-The only required element is 'phone'. Everything else is optional.
+The only required element is 'phone'. Everything else is optional. Phone number cannot be changed.
+
+
+
+### users - DELETE
+Request: http(s)://<host>/users?phone=5555555555
+
+Headers: Token
+
+Body: None
